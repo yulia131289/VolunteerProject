@@ -1,0 +1,34 @@
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilities";
+
+@import "abstracts/variables";
+
+@import "components/button";
+@import "components/form";
+@import "components/navbar";
+@import "components/table";
+
+@import "pages/home";
+
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+i {
+  color: $color-green;
+}
+
+/*---------Links----------------*/
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #5e9e1c;
+  font-size: medium;
+}
+
+a:hover,
+a:active {
+  color: #436b1e;
+  border-bottom: 1px solid transparent;
+}

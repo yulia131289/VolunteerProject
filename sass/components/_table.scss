@@ -1,0 +1,26 @@
+.days-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 2rem;
+
+  &__table-column {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  &__add {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__day {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+  }
+}

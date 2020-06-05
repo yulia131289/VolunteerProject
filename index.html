@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Volunteer App</title>
+    <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendors/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-wrapper light-green lighten-5 z-depth-1">
+          <img
+            src="resources/img/Logo_vertical.jpg"
+            alt="shelter logo"
+            class="logo"
+          />
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#dog-walks">?מי יצא היום לטיול</a></li>
+            <li><a href="#arrive-table">שעות התנדבות</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#dog-walks">?מי יצא היום לטיול</a></li>
+        <li><a href="#arrive-table">שעות התנדבות</a></li>
+      </ul>
+    </header>
+
+    <section class="arrive-table-section" id="arrive-table">
+      <div>
+        <p class="arrive-table-section__note-text">
+          :לחצו על <i class="ion-plus-round"></i> כדי להוסיף את עצמכם ליום
+          המתאים
+        </p>
+      </div>
+
+      <div class="arrive-table-section__main-text">
+        <h3>
+          <span class="arrive-table-section_date">%תאריך%</span> :הוצאת כלבים
+          לטיול
+        </h3>
+      </div>
+      <div class="days-table">
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form">
+                <i class="ion-plus-round"></i>
+              </a>
+              <u>שבת</u>
+              <br />(11:00-08:00)
+            </h5>
+          </div>
+          <div class="saturday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form"
+                ><i class="ion-plus-round"></i
+              ></a>
+              <u>שישי</u><br />
+              (15:00-13:00)
+            </h5>
+          </div>
+          <div class="friday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form"
+                ><i class="ion-plus-round"></i
+              ></a>
+              <u>רביעי</u><br />
+              (10:00-08:00)
+            </h5>
+          </div>
+          <div class="wednesday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form"
+                ><i class="ion-plus-round"></i
+              ></a>
+              <u>שני</u><br />
+              (18:30-16:30)
+            </h5>
+          </div>
+          <div class="monday"></div>
+        </div>
+      </div>
+
+      <div class="arrive-table-section__main-text">
+        <h3>ישיבה עם כלבי הבר בתאים-קריטי עבורם</h3>
+      </div>
+      <div class="days-table">
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form">
+                <i class="ion-plus-round"></i>
+              </a>
+              <u>שבת</u><br />
+              (11:00-08:00)
+            </h5>
+          </div>
+          <div class="saturday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form"
+                ><i class="ion-plus-round"></i
+              ></a>
+              <u>שישי</u><br />
+              (15:00-13:00)
+            </h5>
+          </div>
+          <div class="friday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form">
+                <i class="ion-plus-round"></i>
+              </a>
+              <u>חמישי</u><br />
+              (12:00-10:00)
+            </h5>
+          </div>
+          <div class="thusday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form"
+                ><i class="ion-plus-round"></i
+              ></a>
+              <u>רביעי</u><br />
+              (12:00-10:00)
+            </h5>
+          </div>
+          <div class="wednesday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form">
+                <i class="ion-plus-round"></i>
+              </a>
+              <u>שלישי</u><br />
+              (12:00-10:00)
+            </h5>
+          </div>
+          <div class="tuesday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form"
+                ><i class="ion-plus-round"></i
+              ></a>
+              <u>שני</u><br />
+              (18:30-16:30)
+            </h5>
+          </div>
+          <div class="monday"></div>
+        </div>
+        <div class="days-table__table-column">
+          <div>
+            <h5 class="days-table__day">
+              <a class="days-table__add" href="#form">
+                <i class="ion-plus-round"></i>
+              </a>
+              <u>ראשון</u><br />
+              (12:00-10:00)
+            </h5>
+          </div>
+          <div class="tuesday"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dog-walks" id="dog-walks"></section>
+
+    <section class="section-form" id="form">
+      <div class="row">
+        <h2 class="u-center-text">הרשמה להתנדבות</h2>
+      </div>
+      <div class="row">
+        <form method="post" action="#" class="contact-form">
+          <div class="col span-2-of-2">
+            <div class="contact-form__box">
+              <div class="row">
+                <div class="col span-2-of-3">
+                  <select name="volunteer-day" id="volunteer-day" required>
+                    <option value="">בחר יום</option>
+                    <option value="monday"> שני</option>
+                    <option value="friday">שישי</option>
+                    <option value="saturday">שבת</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-2-of-3">
+                  <input
+                    class="first_name"
+                    type="text"
+                    name="name"
+                    placeholder="שם פרטי"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-2-of-3">
+                  <input
+                    class="last_name"
+                    type="text"
+                    name="name"
+                    placeholder="שם משפחה"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <a class="waves-effect waves-light btn">button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

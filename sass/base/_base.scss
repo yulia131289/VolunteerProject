@@ -1,0 +1,26 @@
+* *::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  font-family: "Alef Hebrew", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+  color: #555;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  padding: 8rem 0;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
