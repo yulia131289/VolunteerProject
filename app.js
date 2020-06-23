@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  $(".arrive-table-section__add").click(function () {
-    var day = $(this).attr("class").split(" ")[1];
+  $('.arrive-table-section__add').click(function () {
+    var day = $(this).attr('class').split(' ')[1];
 
-    $('#volunteer-day option[value="' + day + '"]').prop("selected", true);
+    $('#volunteer-day option[value="' + day + '"]').prop('selected', true);
 
     console.log($('#volunteer-day option[value="' + day + '"]'));
   });
@@ -38,13 +38,14 @@ var dataController = (function () {
 
 var UIController = (function () {
   var DOMstrings = {
-    inputVolunteerDay: "#volunteer-day",
-    inputFirstName: ".first_name",
-    inputLastName: ".last_name",
-    inputTimeOfArrival: ".time_arrival",
-    formButton: ".btn",
-    sideNav: ".sidenav",
-    dateLable: ".arrive-table-section_date",
+    inputVolunteerDay: '#volunteer-day',
+    inputFirstName: '.first_name',
+    inputLastName: '.last_name',
+    inputTimeOfArrival: '.time_arrival',
+    formButton: '.btn',
+    sideNav: '.sidenav',
+    dateLable: '.arrive-table-section_date',
+    daysSelector: '.daysSelector',
   };
 
   return {
@@ -68,11 +69,11 @@ var UIController = (function () {
       element = html =
         '<div><div class="person">%name%</div><button>Delete</button><<div>';
 
-      newHtml = html.replace("%name%", obj.firstName + obj.lastName);
+      newHtml = html.replace('%name%', obj.firstName + obj.lastName);
 
       document
         .querySelector(`.` + dayOfArrival)
-        .insertAdjacentHTML("afterbegin", newHtml);
+        .insertAdjacentHTML('afterbegin', newHtml);
     },
 
     clearFields: function () {
@@ -80,18 +81,18 @@ var UIController = (function () {
 
       fields = document.querySelectorAll(
         DOMstrings.inputVolunteerDay +
-          "," +
+          ',' +
           DOMstrings.inputFirstName +
-          "," +
+          ',' +
           DOMstrings.inputLastName +
-          "," +
+          ',' +
           DOMstrings.inputTimeOfArrival
       );
 
       fieldsArray = Array.prototype.slice.call(fields);
 
       fieldsArray.forEach(function (current, index, array) {
-        current.value = "";
+        current.value = '';
       });
     },
 
@@ -103,16 +104,16 @@ var UIController = (function () {
       last = first + 6; // last day is the first day + 6
       firstDay = new Date(curr.setDate(first)).toUTCString();
       lastDay = new Date(curr.setDate(curr.getDate() + 6)).toUTCString();
-      newFirstDay = firstDay.split(" ");
-      newLastDay = lastDay.split(" ");
+      newFirstDay = firstDay.split(' ');
+      newLastDay = lastDay.split(' ');
 
       dateToDispalay =
         newFirstDay[1] +
-        "/" +
+        '/' +
         newFirstDay[2] +
-        "-" +
+        '-' +
         newLastDay[1] +
-        "/" +
+        '/' +
         newLastDay[2];
 
       document.querySelector(DOMstrings.dateLable).textContent = dateToDispalay;
@@ -126,14 +127,14 @@ var controller = (function (dataCtrl, UICtrl) {
   var setupEventListeners = function () {
     var DOM = UIController.getDOMstring();
 
-    document
-      .querySelector(DOM.formButton)
-      .addEventListener("click", ctrlAddItem);
+    // document
+    //   .querySelector(DOM.formButton)
+    //   .addEventListener("click", ctrlAddItem);
 
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll(DOM.sideNav);
       var options = {
-        edge: "right",
+        edge: 'right',
       };
       var instances = M.Sidenav.init(elems, options);
     });
@@ -148,9 +149,9 @@ var controller = (function (dataCtrl, UICtrl) {
     inputFromForm = UICtrl.getInput();
 
     if (
-      inputFromForm.firstName.value !== "" &&
-      inputFromForm.lastName.value !== "" &&
-      inputFromForm.volunteerDay.value !== ""
+      inputFromForm.firstName.value !== '' &&
+      inputFromForm.lastName.value !== '' &&
+      inputFromForm.volunteerDay.value !== ''
     ) {
       //Add the item to the budget controller
       newItem = dataCtrl.addItem(
@@ -171,6 +172,7 @@ var controller = (function (dataCtrl, UICtrl) {
   return {
     init: function () {
       setupEventListeners();
+      //setupWhoWalkedThisWeekBoard();
     },
   };
 })(dataController, UIController);

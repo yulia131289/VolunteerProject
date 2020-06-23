@@ -1,0 +1,31 @@
+.contact-form {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+
+  &__box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+// select {
+//   background-color: $color-primary-light;
+//   width: 100%;
+//   padding: $select-padding;
+//   border: $select-border;
+//   border-radius: $select-radius;
+//   height: $input-height;
+// }
+
+// input[type="text"],
+// input[type="time"],
+// textarea {
+//   width: 100%;
+//   padding: 7px;
+//   //border-radius: 3px;
+//   // border: 1px solid #ccc;
+//   border: none;
+//   outline: none;
+// }

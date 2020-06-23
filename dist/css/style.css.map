@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "sass/main.scss",
+    "sass/base/_base.scss",
+    "sass/base/_typography.scss",
+    "sass/base/_utilities.scss",
+    "sass/components/_button.scss",
+    "sass/components/_form.scss",
+    "sass/components/_navbar.scss",
+    "sass/components/_table.scss",
+    "sass/pages/_home.scss",
+    "sass/abstracts/_variables.scss"
+  ],
+  "names": [],
+  "mappings": "AAcQ;ACdR;EACE;EACA;EACA;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;ACxBF;AACA;EACE;EACA;EACA;EACA;;;AAGF;AAGE;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;;;AAIJ;EACE;;;AC3BF;EACE;;;AAGF;EACE;;;ACLF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAEF;EACE;EACA;;;ACvBJ;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;;;ACRJ;EACE;EACA;EACA;EACA;EACA;;;ACLF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;;AAGF;EACE;EACA;EACA;;;ACvBJ;EACE;EACA;;;AAGF;AAQA;EACE;;;AAGF;AAEA;EACE,kBClB0B;;;ATc5B;EACE,OSdY;;;ATiBd;AAEA;AAAA;EAEE;EACA;EACA;;;AAGF;AAAA;EAEE;EACA",
+  "file": "style.css"
+}
